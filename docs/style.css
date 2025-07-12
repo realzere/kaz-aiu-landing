@@ -1,11 +1,46 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    background: #222; /* Тёмный фон страницы */
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
+:root{
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --main-color: #b68362;
+    --other-color: #8b8a91;
+    --alt-color: #4b4b51;
+    --ann-color: #c7c6d3;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    color: #333;
+    background: #222; 
+}
+
+
+
+.logo img{
+    max-width: 80px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+
 .hero {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     position: relative;
     background: url('images/UOED2.jpeg') no-repeat center center;
     background-size: cover;
@@ -40,14 +75,29 @@ body {
     max-width: 600px;
 }
 
-/* Общий контейнер */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px; 
+  padding: 10px;
+  scroll-snap-type: x mandatory; 
+}
+
+.scroll-container img {
+  flex: 0 0 auto;
+  height: 300px; 
+  border-radius: 6px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+
 .overlay {
     background: #f5f5f5;
     color: #333;
     padding: 40px 20px;
 }
 
-/* Секции */
 section {
     background: #f5f5f5;
     padding: 30px;
@@ -58,17 +108,19 @@ section {
     text-align: center;
 }
 section h2 {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 section p {
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     margin: 10px 0;
 }
 
 .card-img-top {
-  height: 300px;        /* Желаемая высота */
-  object-fit: cover;    /* Картинка будет заполнять область, обрезая лишнее */
+  height: 300px;       
+  object-fit: cover;    
 }
 
 .items {
@@ -90,23 +142,38 @@ section p {
     height: auto;
 }
 .items .item p {
+    font-family: "Montserrat", sans-serif;
     margin-top: 10px;
     font-weight: 500;
 }
 
-/* Контакты */
 .contact-link {
-    color: #4caf50;
-    text-decoration: none;
-}
-.contact-link:hover {
-    text-decoration: underline;
+  color: #28a745; 
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
-/* Footer */
+.contact-link:hover {
+  text-decoration: underline;
+  color: #218838;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+
+
 footer {
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #171717;
     color: #ccc;
 }
