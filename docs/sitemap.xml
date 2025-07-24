@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kaz-aiu.kz/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kaz-aiu.kz/#about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kaz-aiu.kz/#services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kaz-aiu.kz/#gallery</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kaz-aiu.kz/#contacts</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
